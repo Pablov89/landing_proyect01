@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+:root {
+    /*bg colors*/
+    --background: #43DF77;
+    --primary: #882D93;
+    --secondary: #8046AB;
+    --nav-bg: #43C38D;
+    --btn-bg-prim: #0990BF;
+    --btn-bg-sec: #484649;
+
+    /* text colors */
+    --text-orange: #C46F44;
+    --text-white: #FAFAFA;
+
+    /* decoration */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Source Sans Pro", sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/* header */
+
+header {
+    background: var(--secondary);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    padding: 0p 30px 0px 30px;
+    position: fixed;
+    top: 0;
+}
+
+.logo {
+    height: 100%;
+}
+
+.navbar,
+.navbar-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.navbar {
+    gap: 30px;
+}
+
+.navbar-list {
+    gap: 30px;
+    padding-right: 10px;
+}
+
+.navbar-list a {
+    color: var(--text-orange);
+    font-size: 18px;
+    font-weight: 600;
+    border: 1px solid var(--text-orange);
+    border-radius: 10px;
+    padding: 8px 9px;
+    background: var(--btn-bg-sec);
+}
+
+.navbar-list li:first-child>a {
+    color: var(--text-white);
+    font-weight: 600;
+    border: 2px solid var(--text-white);
+    border-radius: 10px;
+    padding: 8px 9px;
+    background: var(--btn-bg-prim);
+}
