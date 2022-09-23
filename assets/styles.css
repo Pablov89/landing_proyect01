@@ -2,13 +2,13 @@
 
 :root {
     /*bg colors*/
-    --background: #43DF77;
+    --background: #8046AB;
     --primary: #882D93;
-    --secondary: #8046AB;
+    --secondary: #6E3B93;
     --nav-bg: #43C38D;
-    --btn-bg-prim: #0990BF;
+    --btn-bg-prim: #AD60E5;
     --btn-bg-sec: #484649;
-
+    
     /* text colors */
     --text-orange: #C46F44;
     --text-white: #FAFAFA;
@@ -28,18 +28,21 @@
 /* header */
 
 header {
-    background: var(--secondary);
+    background: #6E3B93;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #6E3B93, #171616);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #6E3B93, #171616); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 75px;
+    height: 95px;
     padding: 0p 30px 0px 30px;
     position: fixed;
     top: 0;
 }
 
 .logo {
+    padding-left: 5px;
     height: 100%;
 }
 
@@ -62,19 +65,85 @@ header {
 
 .navbar-list a {
     color: var(--text-orange);
-    font-size: 18px;
-    font-weight: 600;
-    border: 1px solid var(--text-orange);
-    border-radius: 10px;
+    font-size: 22px;
+    font-weight: 800;
     padding: 8px 9px;
-    background: var(--btn-bg-sec);
 }
 
 .navbar-list li:first-child>a {
     color: var(--text-white);
-    font-weight: 600;
-    border: 2px solid var(--text-white);
-    border-radius: 10px;
+    font-weight: 800;
+    font-size: 26px;
     padding: 8px 9px;
-    background: var(--btn-bg-prim);
+
+}
+
+main {
+    background: var(--secondary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:#FAFAFA;
+    width: 100;
+}
+
+#hero {
+    margin-top: 95px;
+    padding: 100px 0;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-info {
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+
+.hero-info h1 {
+    font-size: 50px;
+    width: 90%;
+    min-width: 500px;
+    font-weight: 1000;
+    background: #FF512F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #DD2476, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #DD2476, #FF512F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+
+.hero-info p {
+    width: 90%;
+    font-size: 20px;
+}
+
+.hero-info a {
+    display: flex;
+    color: var(--text-white);
+    background-color: var(--btn-bg-prim);
+    width: 160px;
+    padding: 6px 1px;
+    border-radius: 10px;
+    font-size: 22px;
+    text-align: center;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-text p {
+    padding: 100px 0;
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+
+
 }
